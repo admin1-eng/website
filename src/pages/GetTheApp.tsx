@@ -42,7 +42,7 @@ const GetTheApp = () => {
                 />
               </div>
               
-              <p className="text-lg italic text-gray-700">
+              <p className="text-lg text-gray-700">
                 Available in iOS and Android
               </p>
             </div>

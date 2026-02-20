@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import partnerHero from "@/assets/partner-hero.jpg";
-import underTheTarpVideo from "@/assets/utt-cinematic.mp4";
+import underTheTarpVideo from "@/assets/utt-cinematic-2.mp4";
 import partnerKitchen from "@/assets/partner-kitchen.jpg";
 import partnerMeal from "@/assets/partner-meal.jpg";
 import partnerOutreach from "@/assets/partner-outreach.jpg";
@@ -96,7 +96,7 @@ const Partner = () => {
       </section>
 
       {/* How Your Giving Is Reaching Others Section */}
-      <section className="py-24 md:py-32 bg-[#E8E3DD]">
+      <section className="pt-24 md:pt-32 pb-12 md:pb-16 bg-[#E8E3DD]">
         <div className="container mx-auto px-6 md:px-12 lg:px-16">
           {/* Section Title */}
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-16 md:mb-20 text-center tracking-wide" style={{ fontFamily: "'LEMONMILK', sans-serif" }}>
@@ -203,32 +203,16 @@ const Partner = () => {
             </h3>
             
             {/* Partner Logos - Two Horizontal Rows */}
-            <div className="flex flex-col gap-8 md:gap-12 mb-12">
-              {/* Row 1 */}
-              <div className="flex flex-wrap md:flex-nowrap justify-center items-center gap-6 md:gap-8 lg:gap-12">
-                {partnerLogos.slice(0, 9).map((partner, i) => (
-                  <div key={i} className="flex-shrink-0 h-12 md:h-14 lg:h-16">
-                    <img 
-                      src={partner.src} 
-                      alt={partner.alt} 
-                      className="h-full w-auto object-contain"
-                    />
-                  </div>
-                ))}
-              </div>
-              
-              {/* Row 2 */}
-              <div className="flex flex-wrap md:flex-nowrap justify-center items-center gap-6 md:gap-8 lg:gap-12">
-                {partnerLogos.slice(9).map((partner, i) => (
-                  <div key={i} className="flex-shrink-0 h-12 md:h-14 lg:h-16">
-                    <img 
-                      src={partner.src} 
-                      alt={partner.alt} 
-                      className="h-full w-auto object-contain"
-                    />
-                  </div>
-                ))}
-              </div>
+            <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8 lg:gap-10 mb-12">
+              {partnerLogos.map((partner, i) => (
+                <div key={i} className="flex-shrink-0 h-12 md:h-14 lg:h-16">
+                  <img 
+                    src={partner.src} 
+                    alt={partner.alt} 
+                    className="h-full w-auto object-contain"
+                  />
+                </div>
+              ))}
             </div>
             
             {/* Footer Text */}
